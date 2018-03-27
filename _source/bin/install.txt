@@ -1,0 +1,7 @@
+matches-cli master
+hmvc-modules master
+modular-extensions-hmvc codeigniter-3.x
+ion-auth 2
+restserver-composer
+my-model
+adminlte-composer

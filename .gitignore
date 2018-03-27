@@ -1,0 +1,5 @@
+#codeigniter 3
+_source/application/vendor/
+_source/application/config/development
+_source/application/config/testing
+_source/application/config/production
