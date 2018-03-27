@@ -1,0 +1,16 @@
+
+if ((php_sapi_name() == 'cli') or defined('STDIN')) {
+     if (isset($argv)) {
+         // grab the --env argument, and the one that comes next
+         $key = (array_search('--env', $argv));
+         if (($key !== FALSE) && (isset($argv[$key + 1]))) {
+             define('ENVIRONMENT', $argv[$key + 1]);
+             // get rid of them so they do not get passed in to our method as parameter values
+             unset($argv[$key], $argv[$key + 1]);
+             unset($_SERVER['argv'][$key], $_SERVER['argv'][$key + 1]);
+         }
+     }
+ }
+
+ if (!defined('ENVIRONMENT'))
+  define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
