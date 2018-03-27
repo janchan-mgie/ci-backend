@@ -1,5 +1,15 @@
 <?php
 $packages = array(
+  'backend' => array(
+      'type'  => 'github',
+      'user'  => 'janchan-mgie',
+      'repos' => 'ci-backend',
+      'name'  => 'CI backend',
+      'dir'   => array('_source/application/modules/backend', 'assets/adminlte'),
+      'dst_pre' => '../',
+      'msg'   => 'See https://github.com/janchan-mgie/ci-backend',
+      'branch' => 'master',
+   ),
   'translations' => array(
       'type'  => 'github',
       'user'  => 'bcit-ci',
@@ -27,6 +37,7 @@ $packages = array(
       'name'  => 'CodeIgniter Rest Server',
       //'dir'   => array('config', 'controllers', 'language', 'views', 'helpers'),
       // 'file'   => array('application/config/rest.php'),
+      'dir'   => array('controllers/api'),
       'file'   => array('config/rest.php'),
       'src_pre' => 'application/',
       'msg'   => 'See https://github.com/chriskacerguis/codeigniter-restserver',

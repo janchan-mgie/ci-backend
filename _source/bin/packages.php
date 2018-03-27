@@ -27,6 +27,7 @@ $packages = array(
       'name'  => 'CodeIgniter Rest Server',
       //'dir'   => array('config', 'controllers', 'language', 'views', 'helpers'),
       // 'file'   => array('application/config/rest.php'),
+      'dir'   => array('controllers/api'),
       'file'   => array('config/rest.php'),
       'src_pre' => 'application/',
       'msg'   => 'See https://github.com/chriskacerguis/codeigniter-restserver',
