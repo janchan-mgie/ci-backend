@@ -39,9 +39,9 @@
 
       <!-- Main content -->
       <section class="content container-fluid">
-      <?php print_r($user_info->username); ?>
-      <?php print_r($user_info->id); ?>
-      <br>
+        <?php print_r($user_info->username); ?>
+        <?php print_r($user_info->id); ?>
+        <br>
         <?php echo $content; ?>
       </section>
       <!-- /.content -->

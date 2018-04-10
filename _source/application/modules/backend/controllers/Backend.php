@@ -12,4 +12,13 @@ class Backend extends Backend_Controller {
     $this->template->setContent('welcome_message', $data);
     $this->template->render();
   }
+  public function temp() {
+    $this->template->setValue('content', 'TEMP');
+    $this->template->render();
+  }
+  public function form() {
+    $this->load->helper('form');
+    $this->template->setContent('form_test');
+    $this->template->render();
+  }
 }
